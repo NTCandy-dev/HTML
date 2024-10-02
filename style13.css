@@ -1,0 +1,58 @@
+body{
+    color: rgb(32, 107, 107);
+}
+
+form{
+    width:70%;
+    margin: 0 auto;
+}
+
+table{
+    background-color:darkkhaki;
+    width:100%;
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+input[type=text], input[type=tel]{
+    width: 70%;
+}
+
+input[type=number]{
+    width: 13%;
+}
+textarea{
+    width: 70%;
+}
+
+tr>td:first-child{
+    width: 30%
+}
+
+.hide-text{
+    text-align: center;
+    color:red
+}
+
+.second-border{
+    text-align: center;
+    border: 3px solid red;
+    width: 50%;
+    margin: 10px auto;
+    position: relative;
+    padding: 20px;;
+}
+
+.second-border::before{
+    content: attr(data-text);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    padding: 0 5px;
+    color: red;
+    background-color: darkkhaki;
+}
