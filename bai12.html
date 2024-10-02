@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"
+    <title>Document</title>
+   
+</head>
+<body>
+    <center>
+        <h1 style="color: green">Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+        <form name="myform" action="get">
+            <table>
+                <tr>
+                    <td><label for = "ten">Họ và tên</label></td>
+                    <td><input type="text" name="ten" id="ten"></td>
+                </tr>
+
+                <tr>
+                    <td><lable for ="diachi">Địa chỉ</lable></td>
+                    <td><input type = "text" name="diachi" id ="diachi"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="dienthoai">Điện thoại</label></td>
+                    <td><input type ="tel" id="dienthoai" name="dienthoai" patern="[0,9]{9-12}"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="nam">Phái</label></td>
+                    <td>
+                        <input type="radio" name="phai" id="nam"><label for="nam">Nam</label>
+                        <input type="radio" name="phai" id="nu"><label for="nu">Nữ</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="nghe">Nghề nghiệp</label></td>
+                    <td>
+                        <select name="nghe" id="nghe">
+                            <option value="gv">Giáo viên</option>
+                            <option value="bs">Bác sĩ</option>
+                            <option value="ks">Kỹ sư</option>
+                            <option value="khac">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="sanpham">Chọn sản phẩm tham gia</label></td>
+                    <td>
+                        <select name="sanpham" id="sanpham" multiple>
+                            <option value="kdr">Kem đánh răng</option>
+                            <option value="bg">Bột giặt</option>
+                            <option vallue="dgd">Dầu gọi đầu</optionn>
+                            <option value="st">Sữa tắm</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><labek for="dudoan">Số người dự đoán tham gia</labek></td>
+                    <td><input type="number" name="dudoan" id="dudoan"></input></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="hidden-text"><input type="button" name="button" id="button" value="Đồng ý" onClick="displayInput()"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><p id="displayInput" class="hidden-text"></p></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+    <script>
+        function displayInput(){
+            document.getElementById("displayInput").innerText="Bạn đã đăng ký thành công";
+            document.getElementById("hidden-text").style.display="table-row";
+        }
+    </script>
+</body>
+</html>

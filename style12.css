@@ -1,0 +1,32 @@
+
+form{
+    width: 70%
+}
+table{
+    color: darkgreen;
+    width:100%
+}
+table,tr,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    background-color: lightgreen;
+    padding: 5px;
+}
+tr>td:first-child{
+    width: 30%
+}
+input[type=text], input[type=tel]{
+    width: 70%;
+}
+
+.button-center{
+    text-align: center;
+}
+
+.hidden-text{
+    text-align: center;
+    color:rgb(241, 76, 89);
+}
+
+
+
